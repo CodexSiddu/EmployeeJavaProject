@@ -43,7 +43,7 @@ public class EmployeeController {
 		return ResponseEntity.ok().body(employeeService.updateEmployee(emp));
 
 	}
-
+          here the response entity shouldd be monolithic architecture apply the changes run the unit testing , push the code to the git
 	@DeleteMapping("/employee/{id}")  // http://localhost:9000/employee/1
 	public ResponseEntity<String> deleteEmployee(@PathVariable long id) {
 		employeeService.deleteEmployee(id);
